@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main()
+{
+    int num1,num2;
+    char op;
+    printf("enter your numbers;\t");
+    scanf("%d %d",&num1,&num2);
+    printf("enter your operattor:\t");
+    scanf(" %c", &op);
+    if(op=='/')
+    {
+        if(num2==0)
+        {
+            printf("your number is not divisible");
+        }
+    }
+    switch (op)
+    {
+    case'+':
+    printf("%d",num1+num2);
+    break;
+    case'-':
+    printf("%d",num1-num2);
+    break;
+    case'*':
+    printf("%d",num1*num2);
+    break;
+    case '/':
+    printf("%d",num1/num2);
+    break;
+
+    }
+}
